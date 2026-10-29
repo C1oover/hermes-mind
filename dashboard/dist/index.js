@@ -102,7 +102,7 @@
                     color: "#93c5fd"
                   }
                 },
-                "Temp Hint: " + status.sampl ing_temperature_hint + " · Turn Drive: " + (status.wake?.turn_drive ?? 0).toFixed(2)
+                "Temp Hint: " + status.sampling_temperature_hint + " · Wake(Out=" + (status.wake?.fire_outreach ?? 0).toFixed(2) + ", Silent=" + (status.wake?.fire_background ?? 0).toFixed(2) + ")"
               )
           ),
           h(
